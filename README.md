@@ -10,8 +10,12 @@ The module hashes a name to a valid port number, excluding values registered wit
 
 ```javascript
 var port = require('service-port');
-
 console.log(port('my-service'));
 ```
 
-The above will always print `7935`.
+The above will always print `7935`. As an optional second argument the module accepts a protocol name (e.g. `tcp`, `udp` or `sctp`), which is used to filter out reserved port numbers for that protocol. It defaults to `tcp`.
+
+```javascript
+console.log(port('my-service', 'tcp')); // prints 7935
+console.log(port('my-service', 'udp')); // prints 59577
+```
