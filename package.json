@@ -1,0 +1,32 @@
+{
+  "name": "service-port",
+  "version": "1.0.0",
+  "description": "Map a service name to a port number",
+  "main": "index.js",
+  "dependencies": {
+    "service-names-port-numbers": "2.0.0",
+    "hash-index": "^3.0.0"
+  },
+  "devDependencies": {
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test": "tape test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapetan/service-port.git"
+  },
+  "keywords": [
+    "service",
+    "name",
+    "port",
+    "number",
+    "assign"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kapetan/service-port/issues"
+  },
+  "homepage": "https://github.com/kapetan/service-port#readme"
+}
